@@ -1,0 +1,157 @@
+ #app {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+     margin: 0 auto;
+     flex-direction: column;
+     height: auto;
+
+     .forecast-card {
+         background-color: $site-black;
+         position: relative;
+         overflow: hidden;
+         display: block;
+         transform-origin: bottom;
+         animation: animateForecast 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+         width: 100%;
+         height: 88px;
+         border-bottom: .4px solid $site-white;
+
+         .date-label {
+             display: flex;
+             align-items: center;
+             flex-direction: column;
+             justify-content: space-evenly;
+             width: 80px;
+             min-height: 100%;
+             background-color: $site-secondary-blue;
+
+
+             .week-day {
+                 font-variant-caps: all-petite-caps;
+                 letter-spacing: .8px;
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 font-size: 14px;
+                 padding-top: 8px;
+                 font-weight: 600;
+                 margin-top: 10px;
+                 color: $site-black;
+             }
+
+             .date {
+                 color: $site-black;
+                 font-variant-caps: all-petite-caps;
+                 letter-spacing: 1px;
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 font-weight: 400;
+                 font-size: 14px;
+                 margin-top: -10px;
+
+             }
+         }
+
+         .content-wrapper {
+             display: flex;
+             align-items: center;
+             margin-top: -70px;
+             max-width: 91%;
+             margin-left: 80px;
+             justify-content: space-between;
+            padding-top: 10px;
+            position: relative;
+
+             .chance-rain {
+                 height: 49px;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-between;
+                 position: absolute;
+                 right: 0px;
+                 margin-top: 10px;
+                 i {
+                     color: #d4faffbf;
+                     font-size: 14px;
+                 }
+
+                 .rain {
+                     font-family: Arial, Helvetica, sans-serif;
+                     color: $site-white;
+                     letter-spacing: 1px;
+                     font-size: 13px;
+                     margin-top: -8px;
+                    
+                 }
+             }
+
+             img {
+                 width: 45px;
+                 height: 45px;
+                 margin-top: -20px;
+                 margin-left: 25px;
+                 margin-right: 20px;
+             }
+
+             .condition-wrapper {
+                 display: flex;
+                 flex-direction: column;
+                 margin-right: 80%;
+                 max-width: auto;
+
+                 .condition-text {
+                     color: $site-white;
+                     font-variant-caps: all-petite-caps;
+                     letter-spacing: .5px;
+                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                     font-size: 12.5px;
+                     font-weight: light;
+                     width: auto;
+                     text-align: left;
+                     white-space: nowrap;
+                 }
+
+                 .hi-low {
+                     margin-left: 0px;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+                     width: 120px;
+                     margin-top: -10px;
+
+                     p {
+                         font-family: Arial, Helvetica, sans-serif;
+                         letter-spacing: .5px;
+                         color: $site-white;
+                         font-size: 13px;
+                     }
+
+                     .slash {
+                         font-family: Arial, Helvetica, sans-serif;
+                         color: $site-white;
+                         font-size: 14px;
+                     }
+                 }
+
+             }
+
+
+         }
+
+
+     }
+ }
+
+ //  @media screen and (max-width: 900px) {
+ //   
+ //  }
+
+ @keyframes animateForecast {
+     0% {
+         transform: scale(1, 0);
+     }
+
+     100% {
+         transform: scale(1, 1);
+     }
+ }

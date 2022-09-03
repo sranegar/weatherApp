@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+ 
+.fa {
+    font-size: 22px;
+    color: $site-black;
+    bottom: 27px;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    -webkit-animation-name: arrow;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+}
+ 
+
+@keyframes arrow {
+    0% {
+        bottom: 90px;
+    }
+
+    75% {
+        bottom: 84px;
+    }
+
+    100% {
+        bottom: 90px;
+    }
+}
+ 
+
+ 
