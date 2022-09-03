@@ -16,12 +16,8 @@
 <body>
     <!-- header -->
     <div class="header">
-        <div class="logo">
-            <img src="images/logo.png" alt="logo" />
-            <p>WeatherApp</p>
-        </div>
         <div class="searchbar">
-            <input id="gwInput" type="text" placeholder="Enter City or Zip Code..." />
+            <input autocomplete="off" id="gwInput" type="text" placeholder="Enter City or Zip Code..." />
             <button id="gw"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="nav-links">
@@ -33,21 +29,39 @@
 
     <!-- current weather section -->
     <div id="current" class="current">
+        <div id="current-card" class="current-card">
+            <div class="header"> <p class="tz-id"></p>
+            </div>
+            <div class="cur-wrapper">
+                <div class="left-content">
+                    <div class="location">
+                        <p></p>
+                        <p class="time"></p>
+                        <p class='cur-temp'>Get current weather and a 5 day forecast</p>
+                    
+                        <p class="current-weather-text">Search by State or Zip Code</p>
+                    </div>
+                    <div class="temp-wrapper">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- end current weather section -->
+
+    <!-- forecast -->
+    <div id="app">
        
-        </div>
+    </div>
+    <!-- end forecast -->
 
-        <!-- end current weather section -->
-
-        <!-- forecast -->
-        <div id="app">
-        </div>
-        <!-- end forecast -->
-
-        <!-- JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
-        <script src="lib/jquery-3.6.1.min.js"></script>
-        <script type="module" src="app/model.js"></script>
-        <script type="module" src="app/app.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
+    <script src="lib/jquery-3.6.1.min.js"></script>
+    <script type="module" src="app/model.js"></script>
+    <script type="module" src="app/app.js"></script>
 </body>
 
 </html>
