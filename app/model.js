@@ -19,7 +19,6 @@ function getCurrentForecast(location) {
   $.getJSON(
     `${baseURL}forecast.json?key=${key}&q=${location}&days=5&aqi=no&alerts=no`,
     (data) => {
-
       //Clear old data
       $("#app").empty();
 
@@ -69,10 +68,9 @@ function getCurrentWeather(location) {
   $.get(
     `${baseURL}current.json?key=${key}&q=${location}&days=5&aqi=no&alerts=no`,
     (data) => {
-
       //clear old data
       $("#current").empty();
-console.log(data)
+      console.log(data);
       const location = data.location.name;
       const region = data.location.region;
       const time = data.location.localtime;

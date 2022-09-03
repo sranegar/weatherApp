@@ -78,7 +78,6 @@ p {
   transition: all 0.2s ease-in-out;
 }
 .header .nav-links a:hover {
-  color: rgba(26, 25, 58, 0.8509803922);
   transition: all 0.2s ease-in-out;
 }
 
@@ -166,7 +165,7 @@ p {
   padding-bottom: 30px;
   padding-right: 10px;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
 }
 .current .current-card .cur-wrapper .left-content .location .time {
@@ -177,6 +176,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   margin-top: -45px;
+  opacity: 80%;
 }
 .current .current-card .cur-wrapper .left-content .location img {
   margin-top: -40px;
@@ -344,7 +344,7 @@ p {
   letter-spacing: 1px;
   font-size: 14px;
   margin-top: -8px;
-  font-weight: 700;
+  font-weight: 500;
 }
 #app .forecast-card .content-wrapper img {
   width: 45px;
@@ -369,8 +369,7 @@ p {
   width: auto;
   text-align: left;
   white-space: nowrap;
-  font-weight: 700;
-  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.8392156863);
+  font-weight: 600;
 }
 #app .forecast-card .content-wrapper .condition-wrapper .hi-low {
   margin-left: 0px;
@@ -385,7 +384,7 @@ p {
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.9529411765);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
 }
 #app .forecast-card .content-wrapper .condition-wrapper .hi-low .slash {
   font-family: Arial, Helvetica, sans-serif;
