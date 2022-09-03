@@ -1,5 +1,5 @@
 var key = "ee6dff8161ac471bb4d202345222908";
-var baseURL = "http://api.weatherapi.com/v1/";
+var baseURL = "https://api.weatherapi.com/v1/";
 
 var location = "";
 
