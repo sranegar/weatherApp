@@ -9,4 +9,4 @@ A simple weather application built using a weather API from www.weatherapi.com.
 
 <hr>
 
-https://in-info-web4.informatics.iupui.edu/~sranegar/n423/homework-two/index.html#
+ https://sranegar.github.io/weatherApp/
