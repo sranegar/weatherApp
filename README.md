@@ -1,4 +1,4 @@
-## Homework Two
+## Weather API
 A simple weather application built using a weather API from www.weatherapi.com. 
 
 - Data is retrieved and displayed after a user submits a city or zip code into the search form
